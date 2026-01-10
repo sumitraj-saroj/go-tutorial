@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"io"
-	"io/ioutil"
 	"os"
 )
 
@@ -20,10 +19,4 @@ func main() {
 	}
 	fmt.Println("The length is ", length)
 	defer file.Close()
-}
-func readFile(filename string){
-    databyte, err := os.ReadFile("file.txt")
-
-
-
 }
